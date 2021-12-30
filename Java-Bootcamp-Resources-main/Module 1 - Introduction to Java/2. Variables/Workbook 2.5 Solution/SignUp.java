@@ -7,23 +7,23 @@ public class SignUp {
 
         System.out.println("Welcome to JavaGram! Let's sign you up.");
         
-        System.out.println("What is your first name?");
+        System.out.println("\nWhat is your first name?");
         String firstName = scan.nextLine();
 
-        System.out.println("What is your last name?");
+        System.out.println("\nWhat is your last name?");
         String lastName = scan.nextLine();
 
-        System.out.println("How old are you?");
+        String x = "\nHow old are you?";
+        System.out.println(x);
         int age = scan.nextInt();
 
-        scan.nextLine();
-        System.out.println("Make a username");  
+        System.out.println("\nMake a username");  
         String userName = scan.nextLine();
 
-        System.out.println("What city do you live in?");
+        System.out.println("\nWhat city do you live in?");
         String city = scan.nextLine();
 
-        System.out.println("What country is that?");
+        System.out.println("\nWhich country do you live in?");
         String country = scan.nextLine();
 
         System.out.println("Thank you for joining JavaGram!");

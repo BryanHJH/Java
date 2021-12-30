@@ -8,19 +8,30 @@ public class SignUp {
         System.out.println("Welcome to JavaGram! Let's sign you up.");
         
 
-        //Task 1 - Using Scanner, ask the user questions
 
-        //Ask for their first name.
-        //Ask for their last name.
-        //Ask: how old are you?
-        //Ask them to make a username.
-        //Ask what city they live in.
-        //Ask what country that's from.
+        System.out.println("\nPlease provide your first name: ");
+        String firstname = scan.nextLine();
+
+        System.out.println("\nPlease provide your last name: ");
+        String lastname = scan.nextLine();
+
+        System.out.println("\nHow old are you?");
+        int age = scan.nextInt();
+        
+        System.out.println("\nWhich city do you live in?");
+        scan.nextLine();
+        String city = scan.nextLine();
+        
+        System.out.println("\nWhich country is that in?");
+        String country = scan.nextLine();
+
+        System.out.println("\nPlease create your username:");
+        String username = scan.nextLine();
 
 
         //Task 2 - Print their information. 
 
-        System.out.println("Thank you for joining JavaGram!");
+        System.out.println("\nThank you for joining JavaGram!");
 
         //Print their information like so:
 
@@ -33,7 +44,15 @@ public class SignUp {
         //        Country: Canada
         //
 
+        System.out.println("\n\nYour information: ");
+        System.out.println("\tFirst Name: " + firstname);
+        System.out.println("\tLast Name: "  + lastname);
+        System.out.println("\tAge: " + age);
+        System.out.println("\tUsername: " + username);
+        System.out.println("\tCity: " + city);
+        System.out.println("\tCountry: " + country);
 
+        scan.close();
         //close scanner. It's good practice :D ! 
     }
 }
