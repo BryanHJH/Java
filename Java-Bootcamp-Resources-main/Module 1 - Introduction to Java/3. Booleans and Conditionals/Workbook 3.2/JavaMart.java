@@ -8,12 +8,25 @@ public class JavaMart {
         //if you have enough money
             //       print: Sure!
             //       pay for the toy car 
-
+        if (wallet >= toyCar) {
+            System.out.println("Sure!");
+            wallet -= toyCar;
+        } else {
+            System.out.println("Sorry, I only have " + wallet + " left.");
+        }
         //else:  Sorry, I only have <wallet> left.
 
         
         double nike = 95.99;       //run test case with 89.99
         System.out.println("Can I get these nike shoes?");
+        wallet = 89.99;
+
+        if (wallet >= nike) {
+            System.out.println("Sure!");
+            wallet -= nike;
+        } else {
+            System.out.println("Sorry, I only have " + wallet + " left.");
+        }
         //if you have enough money
             //       print: Sure!
             //       pay for the nike shoes 
