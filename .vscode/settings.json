@@ -1,0 +1,9 @@
+{
+    "workbench.editor.autoLockGroups": {
+        "interactive": true,
+        "imagePreview.previewEditor": true,
+        "vscode.markdown.preview.editor": true,
+        "java.formatterSettingsEditor": true,
+        "mainThreadWebview-markdown.preview": true
+    }
+}

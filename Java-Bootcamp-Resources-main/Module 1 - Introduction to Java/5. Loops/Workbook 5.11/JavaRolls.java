@@ -8,7 +8,8 @@ public class JavaRolls {
               1. print: Let's play Rolling Java. Type anything to start.
               2. Get the user to enter any value
         */
-
+        System.out.print("Let's play Rolling Java. Type anything to start.");
+        scan.nextLine();
         /* Task 2: 
               1. Once the user is ready, print: 
                     Great, here are the rules:\n
@@ -18,6 +19,8 @@ public class JavaRolls {
                     You must collect at least 3 points to win. Enter anything to roll:
               2. Get the user to enter any value
         */
+        System.out.print("Great, here are the rules:\n\t- If you roll a 6 the game stops.\n\t- If you roll a 4 nothing happens.\n\t- Otherwise, you get 1 point.\nYou must collect at least 3 points to win. Enter anything to roll: ");
+        scan.nextLine();
 
        int score = 0;
       
@@ -45,6 +48,26 @@ public class JavaRolls {
               2. print: One point. Keep rolling. 
 
        */
+      while (true) {
+        // Task 3
+        System.out.print("Please enter a number: ");
+        scan.nextLine();
+
+        // Task 5
+        int dice1 = rollDice();
+        System.out.println("You rolled: " + dice1);
+        
+        // Task 6
+        if (dice1 == 6) {
+          System.out.println("End of game");
+          break;
+        } else if (dice1 == 4) {
+          System.out.println("Zero points. Keep rolling");
+          continue;
+        } else {
+          score += 1;
+        }
+      }
 
       
       /* Task 7
@@ -58,6 +81,13 @@ public class JavaRolls {
               Otherwise, print:
                   Tough luck, you lose :( 
       */
+      System.out.println("\nYour score is: " + score);
+
+      if (score >= 3) {
+        System.out.println("Wow, that's lucky. You win!");
+      } else {
+        System.out.println("Tough luck, you lose :(");
+      }
 
     }
   
@@ -67,6 +97,11 @@ public class JavaRolls {
      * @return randomNumber (int)
      * 
      */ 
-  
+    public static int rollDice() {
+      double diceNumber = Math.random() * 6;
+      int randomNumber = (int)diceNumber + 1;
+      
+      return randomNumber;
+    }
   
 }

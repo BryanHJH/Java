@@ -11,6 +11,7 @@ public class AreaCalculator {
         // double rectangle = area of rectangle with a length of 1, and a width of 2. 
         // double triangle = area of triangle with a base of 1, and a width of 2. 
         // double circle = area of circle with a radius of 2. 
+        printAreas();
 
 
         //Task 7 – Call a function that prints all the areas. 
@@ -30,8 +31,13 @@ public class AreaCalculator {
      *  2. Calculates the area of the square. A = side²
      */
     public static double areaSquare(double side) {
+        if (side < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
+        
+        return side*side;
 
-        return 0;
     }
 
 
@@ -49,8 +55,13 @@ public class AreaCalculator {
      *  2. Calculates the area of the rectangle. A = length * width
      */
     public static double areaRectangle(double length, double width) {
+        if (length < 0 || width < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
+        
+        return length*width;
 
-        return 0;  
     } 
 
     //Task 3 - Write a function that calculates the area of a triangle. 
@@ -67,7 +78,12 @@ public class AreaCalculator {
      */ 
     public static double areaTriangle(double base, double height) {
 
-        return 0; 
+        if (base < 0 || height < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
+        
+        return (base*height)/2;
     }
 
     //Task 4 - Write a function that calculates the area of circle. 
@@ -84,7 +100,12 @@ public class AreaCalculator {
      */ 
     public static double areaCircle(double radius) {
 
-        return 0;
+        if (radius < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
+        
+        return Math.PI*radius*radius;
     }
 
 
@@ -106,6 +127,11 @@ public class AreaCalculator {
      *  4. print: ("Circle area: <circle area>")
      * 
      */
-
+    public static void printAreas() {
+        System.out.println("Square area: " + areaSquare(2));
+        System.out.println("Rectangle area: " + areaRectangle(1, 2));
+        System.out.println("Triangle area: " + areaTriangle(1, 2));
+        System.out.println("Circle area: " + areaCircle(2));
+    }
 
 }

@@ -8,7 +8,7 @@ public class CounterTool {
         System.out.println("Oh, ok...");
 
       /* Task 1 – Get integers from the user.
-
+      
 
           1.   print : Pick a number to count by:
                pick up the user's answer
@@ -27,7 +27,22 @@ public class CounterTool {
             2. stops at the third number. 
             3. counts in steps of the first.
       */
+      
+      // Picking a number to count by
+      System.out.print("Pick a number to count by: ");
+      int count = scan.nextInt();
 
+      //  Picking a number to start 
+      System.out.print("Pick a number to start counting by: ");
+      int start = scan.nextInt();
+
+      // Picking a number to count until
+      System.out.print("Pick a number to count to: ");
+      int end = scan.nextInt();
+
+      for (int i = start; i <= end; i += count) {
+        System.out.print(i + " ");
+      }
         scan.close();
     }
 }
