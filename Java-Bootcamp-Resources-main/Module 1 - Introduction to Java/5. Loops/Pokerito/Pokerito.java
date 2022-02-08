@@ -67,7 +67,19 @@ public class Pokerito {
          */
 
         System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
-        System.out.println(">>");
+        int userScore = 0, computerScore = 0;
+
+        for (int i = 1; i <= 5; i++) {
+            scan.nextLine();
+            String dealer = randomCard();
+            System.out.println(dealer);
+            if (userCard.equals(dealer)) {
+                userScore ++;
+            } else if (computerCard.equals(dealer)) {
+                computerScore++;
+            }
+        }
+/*         System.out.println(">>");
         scan.nextLine();
         String dealer1 = randomCard();
         System.out.println(dealer1);
@@ -96,7 +108,7 @@ public class Pokerito {
         scan.nextLine();
         String dealer5 = randomCard();
         System.out.println(dealer5);
-        System.out.println("\n\n");
+        System.out.println("\n\n"); */
 
         /** Task 5 - Get the winner
          * 
@@ -109,13 +121,7 @@ public class Pokerito {
          * • If the computer has more matches, print: The computer wins! 
          * • If the matches are equal, print: everyone wins!.
          */
-        int userScore = 0, computerScore = 0;
 
-        if (userCard.equals(dealer1) || userCard.equals(dealer2) || userCard.equals(dealer3) || userCard.equals(dealer4) || userCard.equals(dealer5)) {
-            userScore += 1;
-        } else if (computerCard.equals(dealer1) || computerCard.equals(dealer2) || computerCard.equals(dealer3) || computerCard.equals(dealer4) || computerCard.equals(dealer5)) {
-            computerScore += 1;
-        }
 
         if (userScore > computerScore) {
             System.out.println("Your score: " + userScore + "\nComputer score: " + computerScore + "\nYou win!");
