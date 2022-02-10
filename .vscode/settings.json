@@ -5,5 +5,13 @@
         "vscode.markdown.preview.editor": true,
         "java.formatterSettingsEditor": true,
         "mainThreadWebview-markdown.preview": true
-    }
+    },
+    "explorer.autoReveal": "focusNoScroll",
+    "editor.cursorStyle": "block",
+    "editor.codeLens": false,
+    "merge-conflict.codeLens.enabled": false,
+    "jupyter.addGotoCodeLenses": false,
+    "jupyter.enableCellCodeLens": false,
+    "liveshare.codeLens": false,
+    "java.debug.settings.enableRunDebugCodeLens": false
 }
