@@ -6,13 +6,16 @@ public class Functions {
     }
 
     public static int random(int range) {
-        double random = Math.random() + range + 1;
+        double random = Math.random()*range + 1;
         return (int) random;
     }
     public static String isPrime(int random) {
         String isPrime = "";
-        for (int i = 0; i < random; i++) {
+        for (int i = 2; i <= random; i++) {
             isPrime = (random % i == 0) ? "COMPOSITE" : "PRIME";
+            if (isPrime.equals("COMPOSITE")) {
+                break;
+            }
         }
         return isPrime;
     }
