@@ -7,7 +7,6 @@
         "mainThreadWebview-markdown.preview": true
     },
     "explorer.autoReveal": "focusNoScroll",
-    "editor.cursorStyle": "block",
     "editor.codeLens": false,
     "merge-conflict.codeLens.enabled": false,
     "jupyter.addGotoCodeLenses": false,
