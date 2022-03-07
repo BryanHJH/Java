@@ -8,7 +8,8 @@ public class App extends Application{
     
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("./TextField.fxml"));
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 750, 750);
+        scene.getStylesheets().add(getClass().getResource("./application.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
     }

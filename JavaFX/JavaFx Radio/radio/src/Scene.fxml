@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <RadioButton fx:id="rButton1" layoutX="54.0" layoutY="191.0" mnemonicParsing="false" onAction="#getFood" text="Pizza">
+            <font>
+                <Font name="Caskaydia Cove Nerd Font Complete" size="12.666666984558105" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="food" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rButton2" layoutX="263.0" layoutY="191.0" mnemonicParsing="false" onAction="#getFood" text="Sushi" toggleGroup="$food">
+            <font>
+                <Font name="Caskaydia Cove Nerd Font Complete" size="12.666666984558105" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rButton3" layoutX="462.0" layoutY="191.0" mnemonicParsing="false" onAction="#getFood" text="Ramen" toggleGroup="$food">
+            <font>
+                <Font name="Caskaydia Cove Nerd Font Complete" size="12.666666984558105" />
+            </font>
+        </RadioButton>
+        <Label fx:id="myLabel" alignment="CENTER" layoutX="1.0" layoutY="40.0" prefHeight="18.0" prefWidth="600.0" style="-fx-alignment: CENTER;" text="Choose your food:" textAlignment="CENTER">
+            <font>
+                <Font name="Caskaydia Cove Nerd Font Complete" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

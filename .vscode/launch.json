@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Pyramid",
+            "request": "launch",
+            "mainClass": "Pyramid",
+            "projectName": "Java_92a1c1cb"
+        },
+        {
+            "type": "java",
             "name": "Launch JLabels",
             "request": "launch",
             "mainClass": "JLabels",

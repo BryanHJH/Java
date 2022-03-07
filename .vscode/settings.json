@@ -12,5 +12,9 @@
     "jupyter.addGotoCodeLenses": false,
     "jupyter.enableCellCodeLens": false,
     "liveshare.codeLens": false,
-    "java.debug.settings.enableRunDebugCodeLens": false
+    "java.debug.settings.enableRunDebugCodeLens": false,
+    "java.project.sourcePaths": [
+        "Java-Bootcamp-Resources-main/Module 2 - Object Oriented Programming/8. Exception Handling/Debugging Workbooks/exercise-four",
+        "Java-Bootcamp-Resources-main/Module 2 - Object Oriented Programming/8. Exception Handling/Debugging Workbooks/exercise-five"
+    ]
 }
